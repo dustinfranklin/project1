@@ -10,6 +10,14 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
 p {
   color: aqua;
   font-family: cursive;
@@ -28,10 +36,15 @@ p {
     border-radius: .5rem;
 }
 
-.btn btn-outline-info{
-  display: flex;
-  align-items: center;
+.poster {
+  margin: 1rem;
+  border: 1px solid white;
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.2s;
 }
+
 
 form {
   justify-content: center;
