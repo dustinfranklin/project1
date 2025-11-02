@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Contact Me</title>
+    <title>Suggestion</title>
 </head>
 <body>
     <header>
@@ -34,27 +34,31 @@
 <main>
     <p class="a24Description"> Have an A24 movie you'd like me to review? Make a suggestion!</p> <br>
 
-    <div class="container">
-        <form action="action_page.php">
-
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your Name"> <br>
-
-            <label for="email">Email Address</label>
-            <input type="text" id="email" name="Email" placeholder="Your Email"> <br>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="A24 Movie Suggestion:" style="height:200px"></textarea> <br>
-
-            <input type="submit" value="Submit">
-
-        </form>
-    </div>
+    <form action="./submission.html" method="Get">
+      <div class="form-row">
+        <label for="first-name">
+            Name:
+        </label>
+        <input type="Text" name="name" id="first-name" required>
+      </div>
+       <div class="form-row">
+        <label for="first-name">
+            Email:
+        </label>
+        <input type="email" name="email" id="first-name" required>
+      </div>
+      <div class="form-row">
+        Suggestion:
+        <textarea name="message" cols="30" rows="5"></textarea>
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Submit" action="./submission.html">
+      </div>
+    </form>
 
 </main>
     <footer>
         2025 All Rights Reserved
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
+</
