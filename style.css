@@ -45,6 +45,17 @@ p {
   transition: transform 0.2s;
 }
 
+.poster:hover {
+  transform: scale(1.03)
+}
+
+@media (max-width: 900px) {
+width: 45%;
+}
+
+@media (max-width: 600px) {
+  width: 90%
+}
 
 form {
   justify-content: center;
